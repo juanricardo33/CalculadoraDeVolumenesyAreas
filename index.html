@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+
+    <title>Calculo de Areas y Volumenes</title>
+  </head>
+  <body>
+    <header>
+      <title>Calculadora de areas y Volumenes</title>
+      <h1>Calculadora de areas y Volumenes</h1>
+    </header>
+    <main>
+      <section id="areas-container">
+        <div id="areas-title-container">
+          <h2 id="areas-title">Areas</h2>
+        </div>
+        <div id="areas-elements-container">
+          <div class="element-container">
+            <div class="title-element-container">Cuadrado</div>
+            <div class="image-container">
+              <img
+                src="public/Cuadrado.png"
+                alt="imagen del cuadrao"
+                class="image"
+              />
+            </div>
+            <div>Formula = (L) * (L)</div>
+            <div class="form-container">
+              <form action="">
+                <label for="cuadradoLadoL"> Lado (L)</label>
+                <input
+                  type="number"
+                  name="cuadradoLadoL"
+                  id="cuadradoLadoL"
+                  placeholder="Introduce el lado (L)"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Area del Cuadrado:
+                <output id="output-cuadrado"></output>
+              </p>
+            </div>
+          </div>
+          <div class="element-container">
+            <div class="title-element-container">Rectángulo</div>
+            <div class="image-container">
+              <img
+                src="public/Rectangulo.png"
+                alt="imagen del Rectangulo"
+                class="image"
+              />
+            </div>
+            <div>Formula = b * h</div>
+            <div class="form-container">
+              <form action="">
+                <label for="base-rectangle"> Base (b)</label>
+                <input
+                  type="number"
+                  name="base-rectangle"
+                  id="base-rectangle"
+                  placeholder="Introduce la base (b)"
+                />
+                <label for="altura-rectangle"> Altura (h)</label>
+                <input
+                  type="number"
+                  name="altura-rectangle"
+                  id="altura-rectangle"
+                  placeholder="Introduce la altura (h)"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Area del Rectángulo:
+                <output id="output-rectangulo"></output>
+              </p>
+            </div>
+          </div>
+          <div class="element-container">
+            <div class="title-element-container">Rombo</div>
+            <div class="image-container">
+              <img
+                src="public/Rombo.png"
+                alt="imagen del cuadrao"
+                class="image"
+              />
+            </div>
+            <div>Formula = (D*d)/2</div>
+            <div class="form-container">
+              <form action="">
+                <label for="diag-mayor"> Diag Mayor</label>
+                <input
+                  type="number"
+                  name="diag-mayor"
+                  id="diag-mayor"
+                  placeholder="Introduce Diag May"
+                />
+                <label for="diag-menor"> Diag Menor</label>
+                <input
+                  type="number"
+                  name="diag-menor"
+                  id="diag-menor"
+                  placeholder="Introduce Diag Men"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Area del Rombo:
+                <output id="output-rombo"></output>
+              </p>
+            </div>
+          </div>
+          <div class="element-container">
+            <div class="title-element-container">Circulo</div>
+            <div class="image-container">
+              <img
+                src="public/Circulo.png"
+                alt="imagen del cuadrao"
+                class="image"
+              />
+            </div>
+            <div>Formula = Pi*r^2</div>
+            <div class="form-container">
+              <form action="">
+                <label for="radio-circle"> Radio</label>
+                <input
+                  type="number"
+                  name="radio-circle"
+                  id="radio-circle"
+                  placeholder="Introduce el Radio"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Area del Circulo:
+                <output id="output-circulo"></output>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="areas-container">
+        <div id="areas-title-container">
+          <h2 id="areas-title">Volumenes</h2>
+        </div>
+
+        <div id="areas-elements-container">
+          <div class="element-container">
+            <div class="title-element-container">Esfera</div>
+            <div class="image-container">
+              <img
+                src="public/Esfera.png"
+                alt="imagen de la Esfera"
+                class="image"
+              />
+            </div>
+            <div>Formula = 4*pi*r^2/3</div>
+            <div class="form-container">
+              <form action="">
+                <label for="radio-esfera"> Radio</label>
+                <input
+                  type="number"
+                  name="radio-esfera"
+                  id="radio-esfera"
+                  placeholder="Introduce el Radio"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Volumen de la esfera :
+                <output id="output-esfera"></output>
+              </p>
+            </div>
+          </div>
+
+          <div class="element-container">
+            <div class="title-element-container">Cubo</div>
+            <div class="image-container">
+              <img src="public/Cubo.png" alt="imagen del Cubo" class="image" />
+            </div>
+            <div>Formula = a^3</div>
+            <div class="form-container">
+              <form action="">
+                <label for="lado-cubo"> Lado (a)</label>
+                <input
+                  type="number"
+                  name="lado-cubo"
+                  id="lado-cubo"
+                  placeholder="Introduce un lado"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Volumen del Cubo:
+                <output id="output-cubo"></output>
+              </p>
+            </div>
+          </div>
+
+          <div class="element-container">
+            <div class="title-element-container">Cilindro</div>
+            <div class="image-container">
+              <img
+                src="public/Cilindro.png"
+                alt="imagen del Cilindro"
+                class="image"
+              />
+            </div>
+            <div>Formula = pi*r^2*h</div>
+            <div class="form-container">
+              <form action="">
+                <label for="radio-cilindro"> Radio</label>
+                <input
+                  type="number"
+                  name="radio-cilindro"
+                  id="radio-cilindro"
+                  placeholder="Introduce el Radio"
+                />
+                <label for="altura-cilindro"> Altura (h)</label>
+                <input
+                  type="number"
+                  name="altura-cilindro"
+                  id="altura-cilindro"
+                  placeholder="Introduce Altura"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Volumen del Cilindro:
+                <output id="output-cilindro"></output>
+              </p>
+            </div>
+          </div>
+
+          <div class="element-container">
+            <div class="title-element-container">Cono</div>
+            <div class="image-container">
+              <img src="public/Cono.png" alt="imagen del Cono" class="image" />
+            </div>
+            <div>Formula = pi*r^2 *h/3</div>
+            <div class="form-container">
+              <form action="">
+                <label for="radio-cono"> Radio</label>
+                <input
+                  type="number"
+                  name="radio-cono"
+                  id="radio-cono"
+                  placeholder="Introduce el Radio"
+                />
+                <label for="altura-cono"> Altura (h)</label>
+                <input
+                  type="number"
+                  name="altura-cono"
+                  id="altura-cono"
+                  placeholder="Introduce Altura"
+                />
+              </form>
+            </div>
+            <div class="result">
+              <p>
+                Volumen del Cono:
+                <output id="output-cono"></output>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      <div id="pieDepagina" class="container">
+        <ul class="nav">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/juan-ricardo-holguin"
+              target="_blank"
+              >Coded by: Juan Ricardo Holguin</a
+            >
+          </li>
+        </ul>
+        <div class="copyright">
+          <small>&copy derechos reservados 2023</small>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
